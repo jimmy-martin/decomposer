@@ -1,5 +1,5 @@
 const movement = {
-    moveforward: function () {
+    moveForward: function () {
         const currentCell = document.querySelector('.cellCurrent');
         // console.log(currentCell);
 
