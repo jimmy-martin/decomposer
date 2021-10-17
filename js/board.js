@@ -12,12 +12,12 @@ const board = {
         const firstRowElement = boardElement.firstElementChild;
         const lastRowElement = boardElement.lastElementChild;
         // console.log(firstRowElement, lastRowElement);
-        firstRowElement.firstElementChild.classList.add('cellStart', 'cellCurrent');
+        firstRowElement.firstElementChild.classList.add('cellStart', 'cellCurrent', 'cellCurrent-right');
         lastRowElement.lastElementChild.classList.add('cellEnd');
 
-        movement.moveForward();
-        movement.turnRight();
-        movement.moveForward();
+        //movement.moveForward();
+        //movement.turnRight();
+        //movement.moveForward();
     },
 
     drawRow: function(numberOfRows, numberOfCells) {
