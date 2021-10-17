@@ -9,6 +9,11 @@ const board = {
         for (let nbRows = 1; nbRows <= numberOfRowsParam; nbRows++) {
             boardElement.append(board.drawRow(nbRows, numberOfCellsParam));
         }
+        const firstRowElement = boardElement.firstElementChild;
+        const lastRowElement = boardElement.lastElementChild;
+        // console.log(firstRowElement, lastRowElement);
+        firstRowElement.firstElementChild.classList.add('cellStart');
+        lastRowElement.lastElementChild.classList.add('cellEnd');
     },
 
     drawRow: function(numberOfRows, numberOfCells) {
