@@ -14,6 +14,8 @@ const board = {
         // console.log(firstRowElement, lastRowElement);
         firstRowElement.firstElementChild.classList.add('cellStart', 'cellCurrent');
         lastRowElement.lastElementChild.classList.add('cellEnd');
+
+        movement.moveforward();
     },
 
     drawRow: function(numberOfRows, numberOfCells) {
