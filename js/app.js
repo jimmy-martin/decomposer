@@ -1,9 +1,9 @@
-var app = {
+const app = {
   init: function() {
-    console.log('init');
+    // console.log('init');
 
     // TODO
-    app.drawBoard();
+    board.init();
 
     // Event listeners - TODO
   },
@@ -39,7 +39,7 @@ var app = {
   },
   checkSuccess: function() {
     // TODO display if the game is won or not
-  }
+  },
 };
 
 document.addEventListener('DOMContentLoaded', app.init);
