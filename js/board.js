@@ -12,7 +12,7 @@ const board = {
         const firstRowElement = boardElement.firstElementChild;
         const lastRowElement = boardElement.lastElementChild;
         // console.log(firstRowElement, lastRowElement);
-        firstRowElement.firstElementChild.classList.add('cellStart');
+        firstRowElement.firstElementChild.classList.add('cellStart', 'cellCurrent');
         lastRowElement.lastElementChild.classList.add('cellEnd');
     },
 
